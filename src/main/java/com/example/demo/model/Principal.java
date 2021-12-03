@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Principal")
 public class Principal implements Serializable {
-public static void main (String []args){}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
