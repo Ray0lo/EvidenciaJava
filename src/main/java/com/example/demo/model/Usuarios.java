@@ -19,8 +19,12 @@ public class Usuarios implements Serializable{
     private String token;
 
 
-
-
+    public Usuarios(Integer id, String username, String pwd, String token) {
+        this.id = id;
+        this.username = username;
+        this.pwd = pwd;
+        this.token = token;
+    }
 
     public Usuarios() {
     }

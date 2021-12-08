@@ -23,6 +23,12 @@ public class Principal implements Serializable {
     public Principal() {
     }
 
+    public Principal(Integer id, String nombre, String pwd, String token) {
+        this.id = id;
+        Nombre = nombre;
+        this.pwd = pwd;
+        this.token = token;
+    }
 
     public Integer getId() {
         return this.id;

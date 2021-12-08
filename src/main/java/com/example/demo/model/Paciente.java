@@ -26,6 +26,17 @@ public class Paciente {
         public Paciente() {
         }
 
+    public Paciente(Integer IDUsuario, String nombre, String apellido, String pwd, String token, Integer telefono, String motivo, Integer edad) {
+        this.IDUsuario = IDUsuario;
+        Nombre = nombre;
+        Apellido = apellido;
+        this.pwd = pwd;
+        this.token = token;
+        Telefono = telefono;
+        Motivo = motivo;
+        this.edad = edad;
+    }
+
     public Integer getIDUsuario() {
         return IDUsuario;
     }

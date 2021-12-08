@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 public class PrincipalController {
     @Autowired
-    private Principal principalService;
+    private PirncipalService principalService;
     
 
-    @PostMapping("/guardarUsuario")
+    @PostMapping("/guardarPrincipal")
     public Principal guarda(@RequestBody Principal principal)
     {
         return ((PirncipalService) principalService).guarda(principal);
 
     }
 
-    @GetMapping("/mostrarUsuarios")
+    @GetMapping("/mostrarPrincipal")
 
     public List <Principal> mostrarPrincipal()
     {
@@ -29,8 +29,8 @@ public class PrincipalController {
 
     }
 
-    @GetMapping("/buscarUsuario/{id}")
-    public Principal buscaUsuarios(@PathVariable Integer id){
+    @GetMapping("/buscarPrincipal/{id}")
+    public Principal buscaPrincipal(@PathVariable Integer id){
         return ((PirncipalService) principalService).buscarporId(id);
 
     }

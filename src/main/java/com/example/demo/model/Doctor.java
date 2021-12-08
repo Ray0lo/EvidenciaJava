@@ -24,6 +24,14 @@ public class Doctor {
     public Doctor() {
     }
 
+    public Doctor(Integer IDcedula, String username, String pwd, String token, Integer telefono) {
+        this.IDcedula = IDcedula;
+        this.username = username;
+        this.pwd = pwd;
+        this.token = token;
+        this.telefono = telefono;
+    }
+
     public Integer getIDcedula() {
         return this.IDcedula;
     }
